@@ -1,6 +1,6 @@
 *{
   margin: 0;
-  height: 100.1%;
+  height: 100%;
 }
 
 .container {
@@ -24,12 +24,39 @@
   text-align: center;
   /* background-color: red; */
   padding-left: 20px;
+  font-size: 5vh;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: 0;
+  margin-right: 10px;
+}
+
+li{
+  float: right;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: slategray;
 }
 
 .landingPage{
   background-image: url(./images/inox-welding.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100%;
 }
 
