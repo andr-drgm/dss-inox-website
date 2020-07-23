@@ -8,7 +8,7 @@ function App() {
       <div className="landingPage">
         <div className="landingPageText" style={{color: "white"}}>
           <div className="landingTitle">DSS-INOX</div>
-          <div className="description">Descriere</div>
+          <div className="description">Confecții oțel inoxidabil</div>
         </div>
         <img className="landingPageImage" src={require("./images/bara-in-house.jpg")} alt="Bara de inox"></img>
       </div>

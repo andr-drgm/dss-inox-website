@@ -8,6 +8,7 @@
 .container {
   text-align: center;
   background-color: black;
+  font-family: 'Oswald', sans-serif;
 }
 
 .landingPage{
@@ -20,26 +21,23 @@
 
 .landingPageText{
   position: relative;
-  top: 45%;
+  top: 30%;
   text-align: center;
   width: 60%;
   height: fit-content;
 }
 
 .landingTitle{
-  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 500%;
 }
 
 .title{
-  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 400%;
 }
 
 .description{
-  font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 300%;
 }
@@ -69,14 +67,6 @@
   top: -30px;
 }
 
-.page2Text{
-  top:45%;
-  text-align: center;
-  width: 60%;
-  height: fit-content;
-  position: relative;
-}
-
 .page3Image{
   padding-right: 20px;
   top: 20%;
@@ -84,4 +74,48 @@
   height: 60%;
   right: 0;
   position: relative;
+}
+
+@media only screen and (max-width: 930px) {
+  .landingPageText{
+    width: 100%;
+    top: 20%;
+    padding-top: 0;
+    /* height: 10%; */
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .landingTitle{
+    padding-top: 0%;
+  }
+
+  .page{
+    display: block;
+  }
+
+  .landingPageImage{
+    /* display: none; */
+    right: auto;
+    width: 70%;
+    height: auto;
+    top: 55%;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
+  .page2Image{
+     display: none; 
+  }
+
+  .page3Image{
+    /* display: none; */
+    right: auto;
+    width: 90%;
+    height: auto;
+    top: 250px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 }
