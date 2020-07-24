@@ -40,15 +40,21 @@
 .description{
   font-weight: 300;
   font-size: 300%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .landingPageImage{
-  padding-right: 20px;
-  padding-top: 20px;
-  width: 35%;
-  height: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 40%;
+  height: 100%;
   right: 0;
   position: absolute;
+  background-image: url(./images/bara-in-house.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+  background-size: cover;
 }
 
 .page{
@@ -59,8 +65,12 @@
 }
 
 .page2Image{
-  padding-left: 20px;
-  width: auto;
+  background-image: url(./images/welder2.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+  background-size: cover;
+  margin-left: 20px;
+  width: 40%;
   height: 100%;
   left: 0;
   position: relative;
@@ -68,12 +78,92 @@
 }
 
 .page3Image{
-  padding-right: 20px;
+  background-image: url(./images/bara.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+  background-size: cover;
+  margin-right: 20px;
   top: 20%;
-  width: auto;
+  width: 40%;
   height: 60%;
   right: 0;
   position: relative;
+}
+
+.page4Image{
+  background-image: url(./images/stairs.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
+  background-size: cover;
+  margin-left: 20px;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: -30px;
+}
+
+.pageContact{
+  height: 50%;
+}
+
+.contactData{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.dataPair{
+  display: flex;
+  flex-direction: row;
+  height:15%;
+  margin-top: 10px;
+}
+
+.locationIcon{
+  background-image: url(./icons/pin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 0;
+  width: 50px;
+  height: 25px;
+}
+
+
+.emailIcon{
+  background-image: url(./icons/email.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 0;
+  width: 50px;
+  height: 25px;
+}
+
+.phoneIcon{
+  background-image: url(./icons/smartphone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 0;
+  width: 50px;
+  height: 25px;
+}
+
+.siteCreator{
+  border-top: 1px solid white;
+  background-color: black;
+  height: fit-content;
+  padding-bottom: 2px;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 930px) {
@@ -95,26 +185,51 @@
     display: block;
   }
 
+  .landingPage{
+    display: block;
+  }
+
   .landingPageImage{
     /* display: none; */
-    right: auto;
-    width: 70%;
-    height: auto;
-    padding-right: 15%;
-    padding-left: 15%;
+    top: 50%;
+    right: unset;
+    position: relative;
+    width: 90%;
+    height: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .page2Image{
-     display: none; 
+    display: none; 
+    top: unset;
+    left: unset;
+    position: relative;
+    width: 90%;
+    height: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .page3Image{
     /* display: none; */
-    right: auto;
+    right: unset;
     width: 90%;
-    height: auto;
+    height: 30%;
     top: 250px;
-    padding-right: 5%;
-    padding-left: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
+
+  .page4Image{
+    display: none; 
+    top: unset;
+    bottom: 0;
+    left: unset;
+    position: relative;
+    width: 90%;
+    height: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+ }
 }
