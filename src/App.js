@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import './App.css';
 import Rellax from "rellax";
+import { firebaseApp } from './firebase';
 
 function App() {
+
 
   const rellaxRef = useRef();
   const rellaxRef2 = useRef();
@@ -48,13 +50,15 @@ function App() {
 
   }, []);
 
+  firebaseApp.analytics();
+
   return (
     <div className="container">
 
       <div className="landingPage">
         <div className="landingPageText" style={{ color: "white" }}>
-          <div className="landingTitle">DSS-INOX</div>
-          <div className="description">Confecții din oțel inoxidabil</div>
+          <div><h1 className="landingTitle">DSS-INOX</h1></div>
+          <div><h1 className="description">Confecții din oțel inoxidabil</h1></div>
         </div>
         <div className="landingPageImage" ref={rellaxRef} src={require("./images/bara-in-house.jpg")} alt="Bara de inox"></div>
       </div>
